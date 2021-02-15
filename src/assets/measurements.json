@@ -1,0 +1,14 @@
+[
+  {
+  "title": "Indoor",
+  "value": 21.51,
+  "unit": "celcius",
+  "dateTime": "2021-02-15T16:52:33.875Z"
+  },
+  {
+  "title": "Outdoor",
+  "value": 6.312,
+  "unit": "celcius",
+  "dateTime": "2021-02-15T16:52:33.875Z"
+  }
+]

@@ -1,0 +1,10 @@
+<!-- <p>
+	muscle-number works!
+</p>
+ -->
+<div class="title">{{measurement.title}}</div>
+<div class="body">
+	<div class="value">{{measurement.value  | temparatureValue:unitType | number:'1.0-1'}}</div>
+	<div class="unit">{{unitType | temperatureLabel}}</div>
+</div>
+<div class="date">{{measurement.dateTime | date:'fullDate':undefined}} {{measurement.dateTime | date:'shortTime':undefined}}</div>
