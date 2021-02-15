@@ -23,6 +23,6 @@ Optional
 - Create a typescript interface for the measurement data and implement it the places the measurement data is used
 - Add a enum for the `celcius` / `fahrenheit` switch and implement it in the places where it is used
 
-During this assignment please feel free to ask questions, discuss approaches or challenge the solution. Formulating an approach is as valuable as implementing it. If you feel you get stuck in use syntax also feel free to ask for help. You can see it as a pair programming session where the goal is to come the solution together.
+During this assignment please feel free to ask questions, discuss approaches or challenge the solution. Formulating an approach is as valuable as implementing it. If you feel you get stuck in use syntax or get insecure feel free to ask for help. You can see it as a pair programming session where the goal is to create the solution together.
 
 Good luck!
