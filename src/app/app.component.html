@@ -1,14 +1,28 @@
 <hello name="{{ name }}"></hello>
 <p>
-	Start editing to see some magic happen :)
+  Start editing to see some magic happen :)
+</p>
+
+<p>
+  <button
+    [disabled]="unitType === TemperatureUnitTypeEnum.celcius"
+    (click)="setUnitType(TemperatureUnitTypeEnum.celcius)"
+  >
+    {{TemperatureUnitTypeEnum.celcius | temperatureLabel}}
+  </button>
+  <button
+    [disabled]="unitType === TemperatureUnitTypeEnum.fahrenheit"
+    (click)="setUnitType(TemperatureUnitTypeEnum.fahrenheit)"
+  >
+    {{TemperatureUnitTypeEnum.fahrenheit | temperatureLabel}}
+  </button>
 </p>
 
 <h2>Building</h2>
 
-<p>
-	<button [disabled]="unitType === TemperatureUnitTypeEnum.celcius" (click)="setUnitType(TemperatureUnitTypeEnum.celcius)">{{TemperatureUnitTypeEnum.celcius | temperatureLabel}}</button>
-	<button [disabled]="unitType === TemperatureUnitTypeEnum.fahrenheit" (click)="setUnitType(TemperatureUnitTypeEnum.fahrenheit)">{{TemperatureUnitTypeEnum.fahrenheit | temperatureLabel}}</button>
-</p>
-
-<app-muscle-number *ngFor="let measurement of measurements" [measurement]="measurement" [unitType]="unitType">
+<app-muscle-number
+  *ngFor="let measurement of measurements"
+  [measurement]="measurement"
+  [unitType]="unitType"
+>
 </app-muscle-number>
