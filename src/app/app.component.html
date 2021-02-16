@@ -12,11 +12,9 @@
 <main class="dashboard">
 	<h1 class="dashboard__title">Dashboard</h1>
 	<section class="grid grid--repeat" aria-label="Grid of various temperature values">
-		<div class="grid__item">
-			<app-muscle-number *ngFor="let measurement of measurements" [measurement]="measurement"
+			<app-muscle-number class="grid__item" *ngFor="let measurement of measurements" [measurement]="measurement"
 				[unitType]="unitType">
 			</app-muscle-number>
-		</div>
 	</section>
 </main>
 

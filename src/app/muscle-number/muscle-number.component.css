@@ -8,6 +8,10 @@
     - description = #666
     ========================================================================== */
 
+:host {
+  display: block;
+}
+
 .muscle-number {
   padding: 12px;
   background-color: #fff;
