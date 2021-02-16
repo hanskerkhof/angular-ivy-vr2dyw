@@ -8,7 +8,7 @@ Your task is to display 2 muscle number components with the data from `measureme
 
 During this assignment please feel free to ask questions, discuss approaches or challenge the solution. Formulating an approach is as valuable as implementing it. If you feel like you are getting stuck in what syntax to use or get insecure feel free to ask for help. You can see it as a pair programming session where the goal is to create the solution together.
 
-This is the stackblitz template: <URL_TO_STACK_BLITZ>
+This is the stackblitz template: https://stackblitz.com/edit/angular-ivy-uasoqd
 
 The `muscle-number` component should have the following features (in order of importance)
 - Display title, value, unit and date. (pass the data object to the component)
