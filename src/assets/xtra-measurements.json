@@ -1,13 +1,13 @@
 [
   {
-    "title": "Body temperature",
-    "value": 36.72,
+    "title": "Outside temperature",
+    "value": 6.2,
     "unit": "celcius",
     "dateTime": "2021-02-15T16:52:33.875Z"
   },
   {
-    "title": "Room temperature",
-    "value": 21.652,
+    "title": "Surface of the sun temperature",
+    "value": 5.600,
     "unit": "celcius",
     "dateTime": "2021-02-15T16:52:33.875Z"
   }
