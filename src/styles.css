@@ -1,6 +1,52 @@
 /* Add application styles & imports to this file! */
-@import url("https://fonts.googleapis.com/css2?family=Roboto");
+/*  ==========================================================================
+    Base styling
+
+    NB: styling based on usage of reset.css
+    cdn: https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css
+    ========================================================================== */
+
+html,
+body {
+  height: 100%;
+}
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  background-color: #dedede;
+  line-height: 1.2;
 }
+
+/*  ==========================================================================
+    Dashboard component
+    ========================================================================== */
+
+.dashboard {
+  padding: 24px;
+}
+
+.dashboard__title {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*  ==========================================================================
+    Grid component
+    ========================================================================== */
+
+.grid {
+  grid-gap: 16px;
+}
+
+.grid--repeat {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+}
+
+.grid--wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+

@@ -1,33 +1,68 @@
-:host {
-  border: solid 1px darkgray;
-  display: inline-block;
-  padding: 0.7em;
+/*  ==========================================================================
+    Muscle number
+    
+    Tip: the styling does not have to be pixel perfect.
+    
+    Colors:
+    - value = #006472
+    - description = #666
+    ========================================================================== */
+
+.muscle-number {
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
-.title {
-  font-size: 1.3em;
-  font-weight: 700;
-  margin: 0 0 0 0;
+.muscle-number--truncate:not(:hover) .muscle-number__label,
+.muscle-number--truncate:not(:hover) .muscle-number__description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.body {
-  align-items: flex-end;
+/*  Header
+    ========================================================================== */
+
+.muscle-number__header {
+  margin-bottom: 8px;
+}
+
+.muscle-number__label {
+  font-weight: bold;
+}
+
+/*  Main
+    ========================================================================== */
+
+.muscle-number__main {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 0.3em 0;
+  column-gap: 4px;
+  align-items: baseline;
 }
 
-.value {
-  margin-right: 0.2em;
-  font-size: 2em;
-  font-weight: 700;
+.muscle-number__value {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+  word-break: break-all;
+  color: #006472;
 }
 
-.label {
-  font-size: 0.8em;
+.muscle-number__unit {
+  font-size: 12px;
 }
 
-.date {
-  color: darkgray;
-  font-size: 0.9em;
+/*  Footer
+    ========================================================================== */
+
+.muscle-number__footer {
+  min-height: 14px;
+  margin-top: 4px;
+}
+
+.muscle-number__description {
+  font-size: 12px;
+  color: #666;
 }

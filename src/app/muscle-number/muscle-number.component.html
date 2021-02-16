@@ -1,10 +1,14 @@
-<!-- <p>
-	muscle-number works!
-</p>
- -->
-<div class="title">{{measurement.title}}</div>
-<div class="body">
-	<div class="value">{{measurement.value  | temparatureValue:unitType | number:'1.0-1'}}</div>
-	<div class="unit">{{unitType | temperatureLabel}}</div>
-</div>
-<div class="date">{{measurement.dateTime | date:'fullDate':undefined}} {{measurement.dateTime | date:'shortTime':undefined}}</div>
+<article class="muscle-number muscle-number--truncate">
+	<header class="muscle-number__header">
+		<h2 class="muscle-number__label ">{{measurement.title}}</h2>
+	</header>
+	<div class="muscle-number__main">
+		<strong class="muscle-number__value">{{measurement.value  | temparatureValue:unitType | number:'1.0-1'}}</strong>
+		<span class="muscle-number__unit">{{unitType | temperatureLabel}}</span>
+	</div>
+	<footer class="muscle-number__footer">
+		<p class="muscle-number__description">
+			{{measurement.dateTime | date:'fullDate'}} {{measurement.dateTime | date:'shortTime'}}
+		</p>
+	</footer>
+</article>

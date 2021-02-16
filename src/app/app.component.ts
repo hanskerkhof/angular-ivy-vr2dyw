@@ -1,15 +1,15 @@
-import { Component, OnInit, VERSION } from "@angular/core";
+import { Component, OnInit, VERSION, ViewEncapsulation } from "@angular/core";
 import { Measurement, TemperatureUnitType, TemperatureUnitTypeEnum } from "./measurement";
 import { MeasurementsService } from "./measurements.service";
 
 @Component({
   selector: "my-app",
   templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  styleUrls: ["./app.component.css"],
+    encapsulation: ViewEncapsulation.None
+
 })
 export class AppComponent implements OnInit {
-  name = "Angular " + VERSION.major;
-
   public measurements: Measurement[];
   public unitType: TemperatureUnitType = TemperatureUnitTypeEnum.celcius;
   public TemperatureUnitTypeEnum = TemperatureUnitTypeEnum;

@@ -4,7 +4,6 @@ import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from "./app.component";
-import { HelloComponent } from "./hello.component";
 import { MuscleNumberComponent } from "./muscle-number/muscle-number.component";
 import { MeasurementsService } from "./measurements.service";
 import { TemperatureLabelPipe } from "./temperature-label.pipe";
@@ -20,7 +19,6 @@ registerLocaleData(localeNL);
   imports: [BrowserModule, FormsModule, HttpClientModule],
   declarations: [
     AppComponent,
-    HelloComponent,
     MuscleNumberComponent,
     TemperatureLabelPipe,
     TemparatureValuePipe,
