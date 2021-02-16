@@ -1,5 +1,9 @@
 import { Component, Input, OnInit } from "@angular/core";
-import { Measurement, TemperatureUnitType, TemperatureUnitTypeEnum } from "../measurement";
+import {
+  Measurement,
+  TemperatureUnitType,
+  TemperatureUnitTypeEnum
+} from "../measurement";
 
 @Component({
   selector: "app-muscle-number",
